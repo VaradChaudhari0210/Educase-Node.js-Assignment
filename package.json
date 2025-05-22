@@ -1,4 +1,24 @@
 {
+  "name": "educase-internshala-node",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/VaradChaudhari0210/Educase-Node.js-Assignment#readme",
+  "bugs": {
+    "url": "https://github.com/VaradChaudhari0210/Educase-Node.js-Assignment/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VaradChaudhari0210/Educase-Node.js-Assignment.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "@prisma/client": "^6.8.2",
     "dotenv": "^16.5.0",
@@ -6,5 +26,6 @@
     "passport": "^0.7.0",
     "prisma": "^6.8.2",
     "session": "^0.1.0"
-  }
+  },
+  "devDependencies": {}
 }
