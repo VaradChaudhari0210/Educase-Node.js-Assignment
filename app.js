@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');  
 require('dotenv').config();
 
-const schoolsRouter = require('./routes/schools');
+const schoolsRouter = require('./routes/schoolRoutes');
 const app = express();
 app.use(express.json());
 app.use(bodyParser.json());
