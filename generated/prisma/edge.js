@@ -153,17 +153,16 @@ const config = {
     "db"
   ],
   "activeProvider": "mysql",
-  "postinstall": false,
   "inlineDatasources": {
     "db": {
       "url": {
-        "fromEnvVar": "DATABASE_URL",
+        "fromEnvVar": "MYSQL_PUBLIC_URL",
         "value": null
       }
     }
   },
-  "inlineSchema": "generator client {\n  provider = \"prisma-client-js\"\n  output   = \"../generated/prisma\"\n}\n\ndatasource db {\n  provider = \"mysql\"\n  url      = env(\"DATABASE_URL\")\n}\n\nmodel schools {\n  id        Int    @id @default(autoincrement())\n  name      String @db.VarChar(150)\n  address   String @db.VarChar(250)\n  latitude  Float  @db.Float\n  longitude Float  @db.Float\n}\n",
-  "inlineSchemaHash": "f117cb8bf6cea3d9e6e370d3267c84d9bf667e7067328b0300a338fe6b65f30c",
+  "inlineSchema": "generator client {\n  provider = \"prisma-client-js\"\n  output   = \"../generated/prisma\"\n}\n\ndatasource db {\n  provider = \"mysql\"\n  url      = env(\"MYSQL_PUBLIC_URL\")\n}\n\nmodel schools {\n  id        Int    @id @default(autoincrement())\n  name      String @db.VarChar(150)\n  address   String @db.VarChar(250)\n  latitude  Float  @db.Float\n  longitude Float  @db.Float\n}\n",
+  "inlineSchemaHash": "9ac502e1fe78e9531956907102482a12fb942c0382d130649c071be41ca64571",
   "copyEngine": true
 }
 config.dirname = '/'
@@ -175,7 +174,7 @@ config.compilerWasm = undefined
 
 config.injectableEdgeEnv = () => ({
   parsed: {
-    DATABASE_URL: typeof globalThis !== 'undefined' && globalThis['DATABASE_URL'] || typeof process !== 'undefined' && process.env && process.env.DATABASE_URL || undefined
+    MYSQL_PUBLIC_URL: typeof globalThis !== 'undefined' && globalThis['MYSQL_PUBLIC_URL'] || typeof process !== 'undefined' && process.env && process.env.MYSQL_PUBLIC_URL || undefined
   }
 })
 
