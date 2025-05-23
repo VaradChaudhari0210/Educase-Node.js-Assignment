@@ -125,7 +125,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "C:\\Varad\\Internship\\Educase Internshala(Node.js)\\generated\\prisma",
+      "value": "C:\\Varad\\Internship\\Educase Internshala Node\\generated\\prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -139,7 +139,7 @@ const config = {
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "C:\\Varad\\Internship\\Educase Internshala(Node.js)\\prisma\\schema.prisma",
+    "sourceFilePath": "C:\\Varad\\Internship\\Educase Internshala Node\\prisma\\schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
