@@ -9,6 +9,10 @@ app.use(bodyParser.json());
 
 app.use('/', schoolsRouter);
 
+app.get('/', (req, res) => {
+    res.send('Welcome to the School API');
+});
+
 app.listen(process.env.PORT, () => {
     console.log(`Server is running on http://localhost:${process.env.PORT}`);
 });
